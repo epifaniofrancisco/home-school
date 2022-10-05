@@ -59,6 +59,10 @@ body {
 	text-transform: uppercase;
 }
 
+.navbar .navbar-brand:hover {
+	color: var(--secondary-color);
+}
+
 .navbar-light .navbar-nav .nav-link {
 	color: var(--text-black-color);
 	font-size: 1.2rem;
