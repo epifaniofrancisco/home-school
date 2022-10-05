@@ -1,0 +1,222 @@
+:root {
+	--header1: 2.5rem;
+	--header2: 1.5rem;
+}
+
+/* Introdução | Hero */
+.introduction .text-introduction-title {
+	font-size: var(--header1);
+	font-weight: 700;
+}
+
+.introduction .text-introduction-title span,
+.text-offer-title {
+	color: var(--primary-color);
+}
+
+.introduction .text-introduction-description {
+	color: #515151;
+	font-size: 1rem;
+}
+
+/* O que nós oferecemos? */
+.offer {
+	background-color: white;
+}
+
+.offer .cards .card {
+	width: 16.9rem;
+	height: 15.9rem;
+	color: #fffffc;
+	background-color: var(--primary-color);
+	border-radius: 10px;
+}
+
+.card-icon {
+	width: 2.6rem;
+	height: 2.6rem;
+	color: var(--primary-color);
+	background-color: #fffffc;
+	font-size: 21px;
+	border: 1px solid var(--primary-color);
+	border-radius: 50%;
+	line-height: 2.6rem;
+	text-align: center;
+}
+
+.card-text {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+/* Nossos professores */
+.our-teachers .section-title h2 {
+	color: var(--primary-color);
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.our-teachers .teacher {
+	position: relative;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	border-radius: 5px;
+	background: #fff;
+}
+
+.our-teachers .teacher .teacher-photo {
+	overflow: hidden;
+	width: 180px;
+	border-radius: 50%;
+}
+
+.our-teachers .teacher h4 {
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.our-teachers .teacher .location {
+	display: block;
+	font-size: 13px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.our-teachers .teacher .teacher-info {
+	padding-left: 30px;
+}
+
+.our-teachers .teacher .subjects h5 {
+	font-size: 16px;
+	margin: 5px 0 0 0;
+}
+
+.our-teachers .teacher .subjects .subject {
+	color: var(--primary-color);
+	font-size: 13px;
+	margin-right: 1rem;
+}
+
+.our-teachers .teacher .social {
+	margin-top: 12px;
+	margin-left: 0;
+}
+
+.our-teachers .teacher .social a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	background: #eff2f8;
+}
+
+.our-teachers .teacher .social a i {
+	color: var(--primary-color);
+	font-size: 16px;
+	margin: 0 2px;
+}
+
+.our-teachers .teacher .social a:hover {
+	background-color: var(--primary-color);
+}
+
+.our-teachers .teacher .social a:hover i {
+	color: #fff;
+}
+
+.our-teachers .teacher .social a + a {
+	margin-left: 8px;
+}
+
+.our-teachers .teacher .social .btn-contact-teacher {
+	height: 2rem;
+	font-size: 14px;
+}
+
+.our-teachers .our-teachers-btn {
+	width: 15rem;
+	height: 40px;
+}
+
+/* Nossos sectores */
+.btn-sectors-primary {
+	background-color: #4b61a6;
+}
+
+.btn-sectors-primary:hover {
+	background-color: #40538e;
+}
+
+.btn-sectors-secondary {
+	color: #4b61a6;
+	border: 1px solid #4b61a6;
+}
+
+.btn-sectors-secondary:hover {
+	background-color: #4b61a6;
+}
+
+/* Nosso canal no youtube */
+.our-youtube-channel .youtube {
+	height: 35rem;
+	background-color: white;
+}
+
+.our-youtube-channel h2 {
+	font-size: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+	.text-introduction-title,
+	.text-introduction-description,
+	.text-offer-title,
+	.text-offer-description {
+		text-align: center;
+	}
+
+	.btn-registry {
+		width: 90%;
+		margin: 2rem 0;
+	}
+
+	.introduction .btn-registry, .btn-sectors-primary,
+	.btn-sectors-secondary {
+		width: 100%;
+		display: block;
+		margin: 0.7rem auto;
+	}
+
+	.card {
+		margin: 0 auto;
+		margin-top: 1rem;
+	}
+
+	.our-sectors {
+		padding: 12px;
+	}
+
+	.our-sectors img {
+		margin-top: 3rem;
+	}
+
+	.our-teachers .teacher {
+		padding: 20px 5px;
+	}
+
+	.our-teachers .teacher .teacher-info {
+		padding-left: 1rem;
+	}
+
+	.our-teachers .teacher .social .btn-contact-teacher {
+		margin-top: 1rem;
+	}
+
+	.our-youtube-channel .youtube {
+		height: 15rem;
+		background-color: white;
+	}
+}

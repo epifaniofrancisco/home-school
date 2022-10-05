@@ -1,0 +1,228 @@
+:root {
+    --primary-color: #f2b705;
+    --secondary-color: #dfa805;
+    --bg-color: #fffaec;
+    --text-white-color: white;
+    --text-black-color: #121214; 
+}
+
+/* Estilo para todos */
+body {
+	color: var(--text-black-color);
+	background-color: #fffaec;
+}
+
+.btn,
+.btn:focus,
+.btn:active,
+.btn-icon:focus,
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+	outline: none;
+	box-shadow: none;
+	border: 0;
+	position: relative;
+}
+
+.my-btn-primary, .my-btn-secondary {	
+	width: 170px;
+	height: 3rem;
+}
+
+.my-btn-primary {
+	color: var(--text-white-color);
+	background-color: var(--primary-color);
+}
+
+.my-btn-primary:hover {
+	color: var(--text-white-color);
+	background-color: var(--secondary-color);
+}
+
+.my-btn-secondary {
+	color: var(--primary-color);
+	background-color: white;
+	border: 1px solid var(--primary-color);
+}
+
+.my-btn-secondary:hover {
+	color: var(--text-white-color);
+	background-color: var(--primary-color);
+}
+
+/* Estilo navbar */ 
+.navbar .navbar-brand, .footer-brand {
+	color: var(--primary-color);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: var(--text-black-color);
+	font-size: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: var(--primary-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: var(--primary-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+	color: var(--secondary-color);
+}
+
+/* Ícone de menu hambúrguer */
+.navbar-toggler {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler span {
+	margin: 0;
+	padding: 0;
+}
+
+.toggler-icon {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: var(--text-black-color);
+	border-radius: 1px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+	margin-top: 0px;
+}
+
+/* Quando a navbar colapsar */
+.navbar-toggler.collapsed .top-bar {
+	position: absolute;
+	top: 0px;
+	transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+	opacity: 1;
+	position: absolute;
+	top: 10px;
+	filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+	position: absolute;
+	top: 20px;
+	transform: rotate(0deg);
+}
+
+/* Quando o menu é clicado */
+.navbar-toggler .top-bar {
+	top: inherit;
+	transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+	opacity: 0;
+	top: inherit;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+	top: inherit;
+	transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+	background: linear-gradient(90deg, #fabf0e, var(--primary-color));
+}
+
+/* Rodapé | Footer */
+.list-inline-item {
+	transition: background-color 0.5s;
+}
+
+.list-inline-item a, footer p > a {
+    color: white;
+	text-decoration: none;
+}
+
+footer p > a:hover {
+    color: white;
+}
+
+.list-inline-item:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+	border-color: var(--primary-color);
+}
+
+.list-inline-item {
+	width: 43px;
+	height: 43px;
+	font-size: 23px;
+	border: 1px solid;
+	border-radius: 3px;
+	line-height: 43px;
+	text-align: center;
+}
+
+footer h5 {
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+footer .underline-hover-effect {
+    position: relative;
+}
+
+footer .underline-hover-effect::before {
+    width: 0;
+    height: 2px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    transition: width 0.25s ease-out;
+}
+
+footer .underline-hover-effect:hover::before {
+    width: 102%;
+    left: 0;
+    right: auto;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+	.navbar-expand-sm .toggler-icon {
+		display: none;
+	}
+}
+
+@media (max-width: 576px) {
+	.navbar {
+		margin: 0 1rem;
+	}
+	.nav-item:first-child {
+		margin-left: 1rem;
+	}
+
+	.my-btn-primary, .my-btn-secondary {
+		font-size: 1.3rem;
+	}
+
+	.btn-registry {
+		margin: 0 1rem;
+	}
+}
