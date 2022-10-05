@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #f2b705;
-    --secondary-color: #dfa805;
+    --primary-color: #F78B34 ;
+    --secondary-color: #F5750D;
     --bg-color: #fffaec;
     --text-white-color: white;
     --text-black-color: #121214; 
@@ -9,7 +9,7 @@
 /* Estilo para todos */
 body {
 	color: var(--text-black-color);
-	background-color: #fffaec;
+	background-color: #FEF7F1;
 }
 
 .btn,
@@ -70,6 +70,7 @@ body {
 
 .navbar-light .navbar-nav .nav-link.active {
 	color: var(--primary-color);
+	font-weight: 600;
 }
 
 .navbar-light .navbar-nav .nav-link.active:hover {
@@ -149,6 +150,7 @@ body {
 
 /* Rodapé | Footer */
 .list-inline-item {
+	cursor: pointer;
 	transition: background-color 0.5s;
 }
 

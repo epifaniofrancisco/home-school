@@ -66,8 +66,15 @@
 
 .our-teachers .teacher .teacher-photo {
 	overflow: hidden;
-	width: 180px;
+	width: 7.5rem;
+	height: 7.5rem;
 	border-radius: 50%;
+}
+
+.our-teachers .teacher .teacher-photo img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .our-teachers .teacher h4 {
@@ -143,20 +150,20 @@
 
 /* Nossos sectores */
 .btn-sectors-primary {
-	background-color: #4b61a6;
+	background-color: #5e5d92;
 }
 
 .btn-sectors-primary:hover {
-	background-color: #40538e;
+	background-color: #585788;
 }
 
 .btn-sectors-secondary {
-	color: #4b61a6;
-	border: 1px solid #4b61a6;
+	color: #5e5d92;
+	border: 1px solid #5e5d92;
 }
 
 .btn-sectors-secondary:hover {
-	background-color: #4b61a6;
+	background-color: #5e5d92;
 }
 
 /* Nosso canal no youtube */
@@ -167,6 +174,16 @@
 
 .our-youtube-channel h2 {
 	font-size: 2rem;
+}
+
+.our-youtube-channel button {
+	background-color: #ff0000;
+	font-size: 1.3rem;
+}
+
+.our-youtube-channel button:hover {
+	background-color: #ED0000;
+	font-size: 1.3rem;
 }
 
 /* Media Queries */
